@@ -13,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "admin-lte": "^3.1.0",
+    "ckeditor": "^4.16.2"
+  }
 }
