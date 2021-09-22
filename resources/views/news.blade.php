@@ -1,13 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    #content .subPage > .inner {
+        min-height: 100vh;
+    }
+</style>
+
 <div class="subPage">
     <div id="newsPage" class="inner">
         <h3 class="pageHeading">news</h3>
         <video autoplay muted loop playsinline>
-            <source src="video-news.mp4" type="video/mp4">
-            <source src="video-news.webm" type="video/webm">
-            <source src="video-news.mov" type="video/mov">
+            <source src="{{ asset('video-news.mp4') }}" type="video/mp4">
+            <source src="{{ asset('video-news.webm') }}" type="video/webm">
+            <source src="{{ asset('video-news.mov') }}" type="video/mov">
             Sorry, your browser doesn't support embedded videos.
         </video>
         <div class="row">
