@@ -12,6 +12,18 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/bootstrap.bundle.min.js', 'public/js')
+    .js('resources/js/easing.js', 'public/js')
+    .js('resources/js/globe.js', 'public/js')
+    .js('resources/js/index.js', 'public/js')
+    .js('resources/js/jquery-3.6.0.min.js', 'public/js')
+    .js('resources/js/numbers.js', 'public/js')
+    .js('resources/js/owl.carousel.min.js', 'public/js')
+    .js('resources/js/particles.min.js', 'public/js')
+    .js('resources/js/stats.js', 'public/js')
+    .js('resources/js/threemodule.js', 'public/js')
+    .js('resources/js/timing.js', 'public/js')
+    .js('resources/js/userstate.js', 'public/js')
 
     .scripts([
         'resources/js/custom.js',

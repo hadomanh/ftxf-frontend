@@ -1,5 +1,17 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/bootstrap.bundle.min.js": "/js/bootstrap.bundle.min.js",
+    "/js/easing.js": "/js/easing.js",
+    "/js/globe.js": "/js/globe.js",
+    "/js/index.js": "/js/index.js",
+    "/js/jquery-3.6.0.min.js": "/js/jquery-3.6.0.min.js",
+    "/js/numbers.js": "/js/numbers.js",
+    "/js/owl.carousel.min.js": "/js/owl.carousel.min.js",
+    "/js/particles.min.js": "/js/particles.min.js",
+    "/js/stats.js": "/js/stats.js",
+    "/js/threemodule.js": "/js/threemodule.js",
+    "/js/timing.js": "/js/timing.js",
+    "/js/userstate.js": "/js/userstate.js",
     "/js/admin.js": "/js/admin.js",
     "/css/admin.css": "/css/admin.css",
     "/css/style.css": "/css/style.css"
