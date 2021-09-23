@@ -2,44 +2,51 @@
 
 @section('content')
 
-<form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data" autocomplete="off">
-    @csrf
-    <div class="form-group">
-        <label for="titleInput">Title</label>
-        <input type="text" name="title" class="form-control" id="titleInput" placeholder="Title">
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">News</h3>
     </div>
 
-    <div class="form-group">
-        <label for="subtitleInput">Subtitle</label>
-        <input type="text" name="subtitle" class="form-control" id="subtitleInput" placeholder="Subtitle">
-    </div>
+    <form class="card-body" action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data" autocomplete="off">
+        @csrf
+        <div class="form-group">
+            <label for="titleInput">Title</label>
+            <input type="text" name="title" class="form-control" id="titleInput" placeholder="Title" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="subtitleInput">Subtitle</label>
+            <input type="text" name="subtitle" class="form-control" id="subtitleInput" placeholder="Subtitle" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="contentInput">Content</label>
+            <textarea name="content" class="form-control" rows="5" id="editor" required></textarea>
+        </div>
+    
+        <label for="uploadWrapper">Thumbnail</label>
+        <div id="uploadWrapper">
+            <label class="upload-trigger" for="js--upload">
+                <div class="uploader">
+                    <img src=""  
+                        data-target="#js--upload" 
+                        class="img-fluid upload-preview" 
+                        data-content="uploadPreview">
+                        
+                    <span data-content="uploadPlus" class="upload-plus">
+                        <i class="fas fa-plus"></i>
+                    </span>
+                </div>
+            </label>
+    
+            <input type="file" name="thumbnail" class="d-none" id="js--upload">
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="{{ route('news.index') }}" class="btn btn-outline-secondary">Cancel</a>
+    </form>
 
-    <div class="form-group">
-        <label for="contentInput">Content</label>
-        <textarea name="content" class="form-control" rows="5" id="editor"></textarea>
-    </div>
-
-    <label for="uploadWrapper">Thumbnail</label>
-    <div id="uploadWrapper">
-        <label class="upload-trigger" for="js--upload">
-            <div class="uploader">
-                <img src=""  
-                    data-target="#js--upload" 
-                    class="img-fluid upload-preview" 
-                    data-content="uploadPreview">
-                    
-                <span data-content="uploadPlus" class="upload-plus">
-                    <i class="fas fa-plus"></i>
-                </span>
-            </div>
-        </label>
-
-        <input type="file" name="thumbnail" class="d-none" id="js--upload">
-    </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <a href="{{ route('news.index') }}" class="btn btn-outline-secondary">Cancel</a>
-</form>
+</div>
 
 @endsection
 

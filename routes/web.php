@@ -4,6 +4,7 @@ use App\Http\Controllers\{
     HomeCarouselItemController,
     LandingPageController,
     NewsController,
+    PartnerController,
 };
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -35,8 +36,10 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
 
     Route::resource('/home-carousel-item', 'HomeCarouselItemController');
     Route::resource('/news', 'NewsController');
+    Route::resource('/partner', 'PartnerController');
 
     Route::get('/news/toggle/{news}', [NewsController::class, 'toggle'])->name('news.toggle');
+    Route::get('/partner/toggle/{partner}', [PartnerController::class, 'toggle'])->name('partner.toggle');
     Route::get('/home-carousel-item/toggle/{homeCarouselItem}', [HomeCarouselItemController::class, 'toggle'])->name('home-carousel-item.toggle');
     Route::post('/news/image', [NewsController::class, 'imageUpload'])->name('news.image.upload');
 

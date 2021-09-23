@@ -6,17 +6,17 @@
     @csrf
     <div class="form-group">
         <label for="titleInput">Title</label>
-        <input type="text" name="title" class="form-control" id="titleInput" placeholder="Title" value="{{ $news->title }}">
+        <input type="text" name="title" class="form-control" id="titleInput" placeholder="Title" value="{{ $news->title }}" required>
     </div>
 
     <div class="form-group">
         <label for="subtitleInput">Subtitle</label>
-        <input type="text" name="subtitle" class="form-control" id="subtitleInput" placeholder="Subtitle"  value="{{ $news->subtitle }}">
+        <input type="text" name="subtitle" class="form-control" id="subtitleInput" placeholder="Subtitle"  value="{{ $news->subtitle }}" required>
     </div>
 
     <div class="form-group">
         <label for="contentInput">Content</label>
-        <textarea name="content" class="form-control" rows="5" id="editor">
+        <textarea name="content" class="form-control" rows="5" id="editor" required>
             {!! $news->content !!}
         </textarea>
     </div>

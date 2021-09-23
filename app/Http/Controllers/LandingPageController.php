@@ -4,16 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\HomeCarouselItem;
 use App\Models\News;
+use App\Models\Partner;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
 {
     private $homeCarouselItem;
     private $news;
+    private $partner;
 
-    public function __construct(HomeCarouselItem $homeCarouselItem, News $news) {
+    public function __construct(HomeCarouselItem $homeCarouselItem, News $news, Partner $partner) {
         $this->homeCarouselItem = $homeCarouselItem;
         $this->news = $news;
+        $this->partner = $partner;
     }
 
     public function index() {
@@ -34,7 +37,8 @@ class LandingPageController extends Controller
     }
     
     public function partner() {
-        return view('partner');
+        $partners = $this->partner->where('active', true)->orderBy('position', 'ASC')->get();
+        return view('partner')->with(compact('partners'));
     }
     
     public function news() {

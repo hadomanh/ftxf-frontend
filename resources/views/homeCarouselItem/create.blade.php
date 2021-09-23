@@ -12,17 +12,17 @@
         <div class="card-body">
             <div class="form-group">
                 <label for="nameInput">Name</label>
-                <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name">
+                <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name" required>
             </div>
 
             <div class="form-group">
                 <label for="urlInput">URL</label>
-                <input type="text" name="url" class="form-control" id="urlInput" placeholder="URL">
+                <input type="text" name="url" class="form-control" id="urlInput" placeholder="URL" required>
             </div>
 
             <div class="form-group">
                 <label for="descriptionInput">Description</label>
-                <textarea name="description" class="form-control" rows="5" id="descriptionInput" placeholder="Description"></textarea>
+                <textarea name="description" class="form-control" rows="5" id="descriptionInput" placeholder="Description" required></textarea>
             </div>
 
             <label for="logoUploadWrapper">Logo</label>

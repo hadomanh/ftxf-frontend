@@ -7,13 +7,6 @@
         <h3 class="pageHeading">contact <span class="fw-light">ftx fund</span></h3>
         <div class="row align-items-end">
             <div class="col-lg-4 col-md-6">
-                <div class="newsletter">
-                    <label class="form-label">sign up to receive email</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Your email...">
-                        <button class="btn" type="button">Send</button>
-                    </div>
-                </div>
                 <img class="logo" src="img/logo.png" alt="">
                 <ul class="list-unstyled companyInfo">
                     <li>FTX FINANCE LTD (UK)</li>
@@ -21,6 +14,12 @@
                     <li>Address 2: 116 Albert (City of Ottawa, Ontario), Canada</li>
                     <li>Email: support@ftxfund.com</li>
                     <li>Website: www.ftxfund.com</li>
+                    <br>
+                    <li>Partner Enquiries</li>
+                    <li>Email: partners@ftxfund.com</li>
+                    <br>
+                    <li>Investor Relations</li>
+                    <li>Email : ir@ftxfund.com</li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6">

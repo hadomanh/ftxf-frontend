@@ -7,7 +7,7 @@
     <meta id="PagKeywords" name="keywords" content="FTXF"/>
     <meta id="PagDescription" name="description" content="FTXFUND - The most comprehensive financial ecosystem on BSC"/>
     <link id="LinkIcon" href="" type="image/x-icon" rel="shortcut icon"/>
-    <link rel="icon" href="img/ftxf-icon.png" type="image/ico"/>
+    <link rel="icon" href="{{ asset('img/ftxf-icon.png') }}" type="image/ico"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
