@@ -15,6 +15,11 @@
                 <label for="nameInput">Name</label>
                 <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name" value="{{ $homeCarouselItem->name }}">
             </div>
+    
+            <div class="form-group">
+                <label for="positionInput">Order</label>
+                <input type="number" name="position" class="form-control" id="positionInput" placeholder="Order" value="{{ $homeCarouselItem->position }}" required>
+            </div>
 
             <div class="form-group">
                 <label for="urlInput">URL</label>

@@ -21,6 +21,7 @@ class CreateHomeCarouselItemsTable extends Migration
             $table->string('thumbnail')->default('');
             $table->string('url')->default('');
             $table->text('description')->nullable();
+            $table->integer('position');
             $table->boolean('active')->default(true);
             $table->timestamps();
         });

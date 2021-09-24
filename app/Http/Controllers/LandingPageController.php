@@ -20,7 +20,7 @@ class LandingPageController extends Controller
     }
 
     public function index() {
-        $homeCarouselItems = $this->homeCarouselItem->where('active', true)->get();
+        $homeCarouselItems = $this->homeCarouselItem->where('active', true)->orderBy('position', 'ASC')->get();
         return view('home')->with(compact('homeCarouselItems'));
     }
     

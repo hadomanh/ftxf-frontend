@@ -22,7 +22,7 @@ class HomeCarouselItemController extends Controller
      */
     public function index()
     {
-        $homeCarouselItem = $this->homeCarouselItem->all();
+        $homeCarouselItem = $this->homeCarouselItem->orderBy('position', 'ASC')->get();
         return view('homeCarouselItem.index')->with(compact('homeCarouselItem'));
     }
 
@@ -69,6 +69,7 @@ class HomeCarouselItemController extends Controller
         $item->name = $request->name;
         $item->url = $request->url;
         $item->description = $request->description;
+        $item->position = $this->homeCarouselItem->count() + 1;
 
         $item->save();
 
@@ -125,6 +126,7 @@ class HomeCarouselItemController extends Controller
         $homeCarouselItem->name = $request->name;
         $homeCarouselItem->url = $request->url;
         $homeCarouselItem->description = $request->description;
+        $homeCarouselItem->position = $request->position;
 
         $homeCarouselItem->save();
         return redirect(route('home-carousel-item.index'));
