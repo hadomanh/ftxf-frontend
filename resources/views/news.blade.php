@@ -24,7 +24,7 @@
                             <div class="item">
                                 <div class="row g-0">
                                     <div class="col-lg-4 col-md-3">
-                                        <a href="{{ route('home.news.detail', [$item->id]) }}"
+                                        <a href="{{ route('home.news.detail', [$item->slug]) }}"
                                         class="newsThumb">
                                             <img src="{{ asset('storage/' . $item->thumbnail) }}" alt="">
                                         </a>
@@ -32,14 +32,14 @@
                                     <div class="col-lg-8 col-md-9">
                                         <div class="newsInfo">
                                             <h3 class="newsTitle">
-                                                <a href="{{ route('home.news.detail', [$item->id]) }}">
+                                                <a href="{{ route('home.news.detail', [$item->slug]) }}">
                                                     {{ $item->title }}
                                                 </a>
                                             </h3>
                                             <div class="newsDesc">
                                                 {{ $item->subtitle }}
                                             </div>
-                                            <a href="{{ route('home.news.detail', [$item->id]) }}"
+                                            <a href="{{ route('home.news.detail', [$item->slug]) }}"
                                             class="more">View More &rarr;</a>
                                         </div>
                                     </div>
