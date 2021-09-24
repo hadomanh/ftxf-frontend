@@ -7,9 +7,9 @@
         <div class="row">
             <div class="col-lg-4">
                 <h3 class="pageHeading">roadmap <span class="fw-light">ftx fund</span></h3>
-                <p>FTX Fund focuses on implementing its plan based on methodically building and launching the
-                    ecosystem. We follow closely the implementation of the plans according to the roadmap announced
-                    to the community.</p>
+                <p>
+                    Our roadmap has been methodically built from the ground up starting with the creating of experienced teams, superior technology and legal foundations to enable the quick follow-up execution of all projects within the FTX Fund ecosystem.
+                </p>
             </div>
         </div>
         <div class="detail text-center">
@@ -30,15 +30,15 @@
                             </div>
                             <div class="desc">
                                 <ul class="list-unstyled">
-                                    <li>- Audit contract, Certificate of Compliance.</li>
-                                    <li>- Analyze known security vulnerabilities.</li>
-                                    <li>- Inspect the operating code.</li>
-                                    <li>- Analyze vulnerabilities using security tool.</li>
-                                    <li>- Dynamic Analysis by using Unit Test.</li>
-                                    <li>- Integration Test: Analyze code behavior in predictable scenarios.
-                                        -Whitepaper publishing.
-                                    </li>
-                                    <li>- FTXF centralized cryptocurrency launch and public introduction.</li>
+                                    <li>- Security analysis and vulnerabilities and treat assessment</li>
+                                    <li>- Full inspection of all operating code</li>
+                                    <li>- Vulnerability and Penetration testing </li>
+                                    <li>- Dynamic Integration testing</li>
+                                    <li>- Advanced code behaviour analysis in predictable scenarios</li>
+                                    <li>- Signed audit contract and received Certificate of Compliance</li>
+                                    <li>- Whitepaper publishing</li>
+                                    <li>- FTXF cryptocurrency launch and public introduction</li>
+                                
                                 </ul>
                             </div>
                         </div>
@@ -49,13 +49,10 @@
                             </div>
                             <div class="desc">
                                 <ul class="list-unstyled">
-                                    <li>- Mass media campaigns on social media and international news channels.</li>
-                                    <li>- The internal sales for partners, group and the pool community.</li>
-                                    <li>- The pre-sales for whitelist registration of the first Pr – community.</li>
-                                    <li>- The public sales on the website.</li>
-                                    <li>- Open and sell FTXF Token incentives to the community, launch Staking
-                                        Dapp.
-                                    </li>
+                                    <li>- Start of pre-sales for partners, early investors and the staking pool community</li>
+                                    <li>- Beginning of mass media campaigns on social media and international news channels</li>
+                                    <li>- First sale of FTXF token incentives to the community, launch of Staking App</li>
+                                    <li>- Launch of public sales on the website</li>
                                 </ul>
                             </div>
                         </div>
@@ -66,13 +63,11 @@
                             </div>
                             <div class="desc">
                                 <ul class="list-unstyled">
-                                    <li>- List on 2 Dex exchanges.</li>
-                                    <li>- List on Coingecko and Coinmarketcap exchanges.</li>
-                                    <li>- Launch the Onstora reverse auction e-commerce platform, use FTXF to buy
-                                        auctions (BID).
-                                    </li>
-                                    <li>- Conduct listing on the top-scale centralized exchanges (CEX).</li>
-                                    <li>- Launch Android and IOS applications for Onstora Platform.</li>
+                                    <li>- Listing of FTXF token on 2 DEX exchanges</li>
+                                    <li>- Listing on Coingecko and Coinmarketcap </li>
+                                    <li>- Launch of Onstora.com reverse auction e-commerce platform as part of FTXF ecosystem</li>
+                                    <li>- Further listing on top-scale centralized exchanges (CEX)</li>
+                                    <li>- Launch of Onstora.com Android and IOS applications</li>
                                 </ul>
                             </div>
                         </div>
@@ -83,12 +78,11 @@
                             </div>
                             <div class="desc">
                                 <ul class="list-unstyled">
-                                    <li>- Launch digital real estate Diasplat platform.</li>
-                                    <li>- Launch cryptocurrency exchange Wowicex.</li>
-                                    <li>- Paygate payment gateway application.</li>
-                                    <li>- Launch Android and IOS applications for Diasplat and Wowicex platform.
-                                    </li>
-                                    <li>- Update the upgraded version of products to serve users.</li>
+                                    <li>- Launch of digital real-estate platform DIASPLAT</li>
+                                    <li>- Launch of cryptocurrency exchange WOWICEX</li>
+                                    <li>- Development of Android and IOS applications for DIASPLAT and WOWICEX</li>
+                                    <li>- Whitepaper and business plan for PAYGATE</li>
+                                    <li>- Ongoing updates of existing ecosystem and infrastructure</li>
                                 </ul>
                             </div>
                         </div>

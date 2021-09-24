@@ -5,9 +5,8 @@
     <div id="contactPage" class="inner">
         <div id="particles-js"></div>
         <h3 class="pageHeading">contact <span class="fw-light">ftx fund</span></h3>
-        <div class="row align-items-end">
+        <div class="row align-items-start">
             <div class="col-lg-4 col-md-6">
-                <img class="logo" src="img/logo.png" alt="">
                 <ul class="list-unstyled companyInfo">
                     <li>FTX FINANCE LTD (UK)</li>
                     <li>Address 1: No. 40 Gracechurch Street, London, EC3V 0BT, United Kingdom</li>

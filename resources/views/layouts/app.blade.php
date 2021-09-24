@@ -99,10 +99,10 @@
                 </div>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="{{ route('home.index') }}">Home</a></li>
-                    <li><a class="dropdown-item" href="{{ route('home.about') }}">About FTX fund</a></li>
+                    <li><a class="dropdown-item" href="{{ route('home.about') }}">About FTX Fund</a></li>
                     <li><a class="dropdown-item" href="{{ route('home.ecosystem') }}">Ecosystem</a></li>
                     <li><a class="dropdown-item" href="{{ route('home.roadmap') }}">Roadmap</a></li>
-                    <li><a class="dropdown-item" href="{{ route('home.partner') }}">Our partners</a></li>
+                    <li><a class="dropdown-item" href="{{ route('home.partner') }}">Our Partners</a></li>
                     <li><a class="dropdown-item"
                            href="https://bscscan.com/address/0xd90F0846b9D0F371b35a9Fe89102C306458AA56F"
                            target="_blank">Smart Contract</a></li>
@@ -191,17 +191,6 @@
     </div>
 </div>
 <aside id="rightSide" class="d-none d-lg-block">
-    <ul class="social list-unstyled">
-        <li>
-            <a href="#"><i class="fas fa-globe"></i></a>
-        </li>
-        <li>
-            <a href="#"><i class="fas fa-search"></i></a>
-        </li>
-        <li>
-            <a href="#"><i class="fas fa-phone-alt"></i></a>
-        </li>
-    </ul>
     <div class="scrollWrap">
         <div class="mousey">
             <div class="scroller"></div>
