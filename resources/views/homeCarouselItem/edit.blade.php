@@ -13,17 +13,17 @@
         <div class="card-body">
             <div class="form-group">
                 <label for="nameInput">Name</label>
-                <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name" value="{{ $homeCarouselItem->name }}" required>
+                <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name" value="{{ $homeCarouselItem->name }}">
             </div>
 
             <div class="form-group">
                 <label for="urlInput">URL</label>
-                <input type="text" name="url" class="form-control" id="urlInput" placeholder="URL" value="{{ $homeCarouselItem->url }}" required>
+                <input type="text" name="url" class="form-control" id="urlInput" placeholder="URL" value="{{ $homeCarouselItem->url }}">
             </div>
 
             <div class="form-group">
                 <label for="descriptionInput">Description</label>
-                <textarea name="description" class="form-control" rows="5" id="descriptionInput" placeholder="Description" required>{{ $homeCarouselItem->description }}</textarea>
+                <textarea name="description" class="form-control" rows="5" id="descriptionInput" placeholder="Description">{{ $homeCarouselItem->description }}</textarea>
             </div>
 
             <label for="logoUploadWrapper">Logo</label>

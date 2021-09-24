@@ -15,12 +15,12 @@ class CreateHomeCarouselItemsTable extends Migration
     {
         Schema::create('home_carousel_items', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('background');
-            $table->string('logo');
-            $table->string('thumbnail');
-            $table->string('url');
-            $table->text('description');
+            $table->string('name')->default('');
+            $table->string('background')->default('');
+            $table->string('logo')->default('');
+            $table->string('thumbnail')->default('');
+            $table->string('url')->default('');
+            $table->text('description')->nullable();
             $table->boolean('active')->default(true);
             $table->timestamps();
         });

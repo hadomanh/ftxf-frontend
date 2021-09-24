@@ -5,6 +5,12 @@
     <div class="owl-carousel">
 
         @foreach ($homeCarouselItems as $item)
+        @if (empty($item->logo) && empty($item->background) && empty($item->description))
+        <div class="itemInner grandOpening text-center">
+            <img class="thumb" src="{{ asset('storage/' . $item->thumbnail) }}" alt="">
+            <a class="more" href="{{ $item->url }}" target="_blank">view more</a>
+        </div>
+        @else
             <div class="itemInner" style="background: #fff url({{ asset('storage/' . $item->background) }}) no-repeat bottom center / contain;">
                 <img class="thumb" src="{{ asset('storage/' . $item->thumbnail) }}" alt="">
                 <div class="itemContent text-center">
@@ -15,6 +21,8 @@
                     <a class="more" href="{{ $item->url }}" target="_blank">view more</a>
                 </div>
             </div>
+        @endif
+            
         @endforeach
 
         
