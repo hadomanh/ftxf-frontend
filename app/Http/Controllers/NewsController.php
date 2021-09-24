@@ -134,7 +134,6 @@ class NewsController extends Controller
      */
     public function update(Request $request, News $news)
     {
-
         $currentMillis = round(microtime(true) * 1000);
         if($request->hasFile('thumbnail')){
             $thumbnailFileName = $currentMillis . '.' . $request->file('thumbnail')->extension();

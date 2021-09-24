@@ -36,7 +36,7 @@
             </div>
         </label>
 
-        <input type="file" name="thumbnail" class="d-none" id="js--upload" required>
+        <input type="file" name="thumbnail" class="d-none" id="js--upload">
     </div>
 
     <button type="submit" class="btn btn-warning">Submit</button>
