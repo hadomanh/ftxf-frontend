@@ -27,7 +27,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/fa881189ef.js" crossorigin="anonymous"></script>
 
-    <link href="{{ asset('css/style.css')}} " rel="stylesheet">
+    <link href="{{asset('css/style.css?v=').time()}}" rel="stylesheet">
 
 </head>
 
