@@ -24,6 +24,21 @@
             <textarea name="content" class="form-control" rows="5" id="editor" required></textarea>
         </div>
     
+        <div class="form-group">
+            <label for="seoTitleInput">Meta Title (For SEO)</label>
+            <input type="text" name="seo_title" class="form-control" id="seoTitleInput" placeholder="Meta Title">
+        </div>
+    
+        <div class="form-group">
+            <label for="seoDescriptionInput">Meta Description (For SEO)</label>
+            <textarea name="seo_description" id="seoDescriptionInput" class="form-control" cols="30" rows="10"></textarea>
+        </div>
+    
+        <div class="form-group">
+            <label for="seoKeywordInput">Meta Keyword (For SEO)</label>
+            <input type="text" name="seo_keyword" class="form-control" id="seoKeywordInput" placeholder="Subtitle">
+        </div>
+    
         <label for="uploadWrapper">Thumbnail</label>
         <div id="uploadWrapper">
             <label class="upload-trigger" for="js--upload">
@@ -39,7 +54,7 @@
                 </div>
             </label>
     
-            <input type="file" name="thumbnail" class="d-none" id="js--upload">
+            <input type="file" name="thumbnail" class="d-none" id="js--upload" required>
         </div>
     
         <button type="submit" class="btn btn-primary">Submit</button>

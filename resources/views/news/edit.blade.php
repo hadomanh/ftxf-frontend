@@ -2,8 +2,9 @@
 
 @section('content')
 
-<form action="{{ route('news.store') }}" method="POST" enctype="multipart/form-data" autocomplete="off">
+<form action="{{ route('news.update', $news->id) }}" method="POST" enctype="multipart/form-data" autocomplete="off">
     @csrf
+    @method('PUT')
     <div class="form-group">
         <label for="titleInput">Title</label>
         <input type="text" name="title" class="form-control" id="titleInput" placeholder="Title" value="{{ $news->title }}" required>
@@ -35,7 +36,7 @@
             </div>
         </label>
 
-        <input type="file" name="thumbnail" class="d-none" id="js--upload">
+        <input type="file" name="thumbnail" class="d-none" id="js--upload" required>
     </div>
 
     <button type="submit" class="btn btn-warning">Submit</button>

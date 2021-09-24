@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class NewsController extends Controller
 {
@@ -55,6 +56,30 @@ class NewsController extends Controller
         $news->title = $request->title;
         $news->subtitle = $request->subtitle;
         $news->content = $request->content;
+
+        if (!$request->filled('seo_title')) {
+            $news->seo_title = $request->title;
+        } else {
+            $news->seo_title = $request->seo_title;
+        }
+
+        if (!$request->filled('seo_description')) {
+            $news->seo_description = $request->subtitle;
+        } else {
+            $news->seo_description = $request->seo_description;
+        }
+
+        if (!$request->filled('seo_keyword')) {
+            $news->seo_keyword = '';
+        } else {
+            $news->seo_keyword = $request->seo_keyword;
+        }
+
+        $news->slug = '';
+
+        $news->save();
+
+        $news->slug = Str::slug($request->title, '-') . '-' . $news->id;
 
         $news->save();
 
@@ -109,7 +134,40 @@ class NewsController extends Controller
      */
     public function update(Request $request, News $news)
     {
-        //
+
+        $currentMillis = round(microtime(true) * 1000);
+        if($request->hasFile('thumbnail')){
+            $thumbnailFileName = $currentMillis . '.' . $request->file('thumbnail')->extension();
+            $news->thumbnail = $request->file('thumbnail')->storeAs('newsThumbnail', $thumbnailFileName, 'public');
+        }
+
+        $news->title = $request->title;
+        $news->subtitle = $request->subtitle;
+        $news->content = $request->content;
+
+        if (!$request->filled('seo_title')) {
+            $news->seo_title = $request->title;
+        } else {
+            $news->seo_title = $request->seo_title;
+        }
+
+        if (!$request->filled('seo_description')) {
+            $news->seo_description = $request->subtitle;
+        } else {
+            $news->seo_description = $request->seo_description;
+        }
+
+        if (!$request->filled('seo_keyword')) {
+            $news->seo_keyword = '';
+        } else {
+            $news->seo_keyword = $request->seo_keyword;
+        }
+
+        $news->slug = Str::slug($request->title, '-') . '-' . $news->id;
+
+        $news->save();
+
+        return redirect(route('news.index'));
     }
 
     /**

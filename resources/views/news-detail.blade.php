@@ -1,5 +1,20 @@
 @extends('layouts.app')
 
+@section('seoTag')
+    <!-- Main Tag -->
+    <title>{{ $news->title }}</title>
+    <meta id="PagKeywords" name="keywords" content="{{ $news->seo_keyword}}"/>
+    <meta id="PagDescription" name="description" content="{{ $news->seo_description }}"/>
+
+    <!-- Facebook Tag -->
+    <meta property="og:url" content="https://ftxf-frontend.pages.dev"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ $news->seo_title }}"/>
+    <meta property="og:description" content="{{ $news->seo_description }}"/>
+    <meta property="og:image" content="https://ftxf-frontend.pages.dev/img/logo.png"/>
+    <meta property="og:site_name" content="Ftxfund"/>
+@endsection
+
 @section('content')
 <div class="subPage">
     <div id="newsPage" class="inner">
@@ -15,8 +30,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row otherNews">
 
+                <div class="row otherNews">
                     @foreach ($allNews as $item)
                         @if ($item->id !== $news->id)
                         <div class="col-md-6">
@@ -28,7 +43,6 @@
                         </div>
                         @endif
                     @endforeach
-
                 </div>
             </div>
         </div>

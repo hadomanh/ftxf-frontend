@@ -26,7 +26,7 @@ Route::get('/ecosystem', [LandingPageController::class, 'ecosystem'])->name('hom
 Route::get('/roadmap', [LandingPageController::class, 'roadmap'])->name('home.roadmap');
 Route::get('/partner', [LandingPageController::class, 'partner'])->name('home.partner');
 Route::get('/news', [LandingPageController::class, 'news'])->name('home.news');
-Route::get('/news/{news}', [LandingPageController::class, 'newsDetail'])->name('home.news.detail');
+Route::get('/news/{slug}', [LandingPageController::class, 'newsDetail'])->name('home.news.detail');
 Route::get('/contact', [LandingPageController::class, 'contact'])->name('home.contact');
 
 Route::prefix('admin')->middleware(['auth'])->group(function () {

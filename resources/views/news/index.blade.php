@@ -20,7 +20,7 @@
           @foreach ($news as $item)
               <tr>
                     <td>{{ $loop->index + 1 }}</td>
-                    <td><a href="{{ route('home.news.detail', $item->id) }}" target="_blank">{{ $item->title }}</a></td>
+                    <td><a href="{{ route('home.news.detail', $item->slug) }}" target="_blank">{{ $item->title }}</a></td>
 
                     @if ($item->active)
                         <td class="text-success">Active</td>

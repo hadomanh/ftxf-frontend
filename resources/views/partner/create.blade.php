@@ -34,7 +34,7 @@
                 </div>
             </label>
     
-            <input type="file" name="logo" class="d-none" id="js--upload">
+            <input type="file" name="logo" class="d-none" id="js--upload" required>
         </div>
     
         <button type="submit" class="btn btn-primary">Submit</button>

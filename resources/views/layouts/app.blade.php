@@ -2,23 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!-- Main Tag -->
-    <title>FTXFUND - The most comprehensive financial ecosystem on BSC</title>
-    <meta id="PagKeywords" name="keywords" content="FTXF"/>
-    <meta id="PagDescription" name="description" content="FTXFUND - The most comprehensive financial ecosystem on BSC"/>
     <link id="LinkIcon" href="" type="image/x-icon" rel="shortcut icon"/>
     <link rel="icon" href="{{ asset('img/ftxf-icon.png') }}" type="image/ico"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    @hasSection ('seoTag')
+        @yield('seoTag')
+    @else
+        <!-- Main Tag -->
+        <title>FTXFUND - The most comprehensive financial ecosystem on BSC</title>
+        <meta id="PagKeywords" name="keywords" content="FTXF"/>
+        <meta id="PagDescription" name="description" content="FTXFUND - The most comprehensive financial ecosystem on BSC"/>
 
-    <!-- Facebook Tag -->
-    <meta property="og:url" content="https://ftxf-frontend.pages.dev"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="FTXFUND - The most comprehensive financial ecosystem on BSC"/>
-    <meta property="og:description" content=""/>
-    <meta property="og:image" content="https://ftxf-frontend.pages.dev/img/logo.png"/>
-    <meta property="og:site_name" content="Ftxfund"/>
+        <!-- Facebook Tag -->
+        <meta property="og:url" content="https://ftxf-frontend.pages.dev"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="FTXFUND - The most comprehensive financial ecosystem on BSC"/>
+        <meta property="og:description" content=""/>
+        <meta property="og:image" content="https://ftxf-frontend.pages.dev/img/logo.png"/>
+        <meta property="og:site_name" content="Ftxfund"/>
+    @endif
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/fa881189ef.js" crossorigin="anonymous"></script>

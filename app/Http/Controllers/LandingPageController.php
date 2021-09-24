@@ -46,9 +46,14 @@ class LandingPageController extends Controller
         return view('news')->with(compact('news'));
     }
     
-    public function newsDetail(News $news)
+    public function newsDetail($slug)
     {
+        $elements = explode('-', $slug);
+        $newsId = $elements[count($elements) - 1];
+        $news = $this->news->find($newsId);
+
         $allNews = $this->news->where('active', true)->get();
+
         return view('news-detail')->with(compact('news', 'allNews'));
     }
     

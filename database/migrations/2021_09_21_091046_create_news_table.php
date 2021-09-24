@@ -19,6 +19,10 @@ class CreateNewsTable extends Migration
             $table->text('subtitle');
             $table->text('content');
             $table->string('thumbnail');
+            $table->text('slug');
+            $table->text('seo_title');
+            $table->text('seo_description');
+            $table->text('seo_keyword');
             $table->boolean('active')->default(true);
             $table->timestamps();
         });

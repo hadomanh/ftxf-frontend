@@ -11,6 +11,10 @@ class News extends Model
         'subtitle',
         'content',
         'thumbnail',
+        'slug',
+        'seo_title',
+        'seo_description',
+        'seo_keyword',
         'active',
     ];
 }
