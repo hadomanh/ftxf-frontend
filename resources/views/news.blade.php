@@ -1,11 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<style>
-    #content .subPage > .inner {
-        min-height: 100vh;
-    }
-</style>
 
 <div class="subPage">
     <div id="newsPage" class="inner">

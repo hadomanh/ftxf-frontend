@@ -1325,3 +1325,12 @@ aside .social li a:hover {
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
+
+#content .subPage > .inner {
+	min-height: 100vh;
+}
+
+.itemIntro {
+	min-height: 15vh;
+	max-height: 15vh;
+}
