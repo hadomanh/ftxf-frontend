@@ -702,7 +702,7 @@ aside .social li a:hover {
 }
 /*========================== CONTACT ==========================*/
 #contactPage {
-	background: #fff url(../img/contact-bg.jpg) no-repeat left top / cover;
+	background: #fff url(../img/contact-bg.jpg) no-repeat right top / cover;
 }
 #contactPage textarea {
 	height: 150px;
