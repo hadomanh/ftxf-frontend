@@ -52,9 +52,9 @@ class LandingPageController extends Controller
         $newsId = $elements[count($elements) - 1];
         $news = $this->news->find($newsId);
 
-        $allNews = $this->news->where('active', true)->get();
+        $relatedNews = $this->news->where('active', true)->limit(6)->get();
 
-        return view('news-detail')->with(compact('news', 'allNews'));
+        return view('news-detail')->with(compact('news', 'relatedNews'));
     }
     
     public function contact() {

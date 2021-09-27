@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="row otherNews">
-                    @foreach ($allNews as $item)
+                    @foreach ($relatedNews as $item)
                         @if ($item->id !== $news->id)
                         <div class="col-md-6">
                             <h3 class="newsTitle">
