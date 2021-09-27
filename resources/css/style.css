@@ -1318,11 +1318,19 @@ aside .social li a:hover {
 	}
 }
 
-.newsDesc {
+#newsPage .listNews .newsDesc {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+#newsPage .listNews .newsTitle {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 }
 
@@ -1333,4 +1341,23 @@ aside .social li a:hover {
 .itemIntro {
 	min-height: 15vh;
 	max-height: 15vh;
+}
+
+@media only screen and (min-width: 992px) {
+	#newsPage .listNews .item {
+		min-height: 160px;
+		max-height: 160px;
+	}
+	#newsPage .listNews .newsThumb {
+		max-height: 140px;
+		overflow: hidden;
+	}
+	#newsPage .listNews .newsThumb img {
+		z-index: -1;
+	}
+
+	#content .subPage .row {
+		min-height: 140px;
+		max-height: 140px;
+	}
 }
