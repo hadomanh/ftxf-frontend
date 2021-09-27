@@ -17,9 +17,22 @@
 
     <div class="form-group">
         <label for="contentInput">Content</label>
-        <textarea name="content" class="form-control" rows="5" id="editor" required>
-            {!! $news->content !!}
-        </textarea>
+        <textarea name="content" class="form-control" rows="5" id="editor" required>{!! $news->content !!}</textarea>
+    </div>
+    
+    <div class="form-group">
+        <label for="seoTitleInput">Meta Title (For SEO)</label>
+        <input type="text" name="seo_title" class="form-control" id="seoTitleInput"  value="{{ $news->seo_title }}" placeholder="Meta Title">
+    </div>
+
+    <div class="form-group">
+        <label for="seoDescriptionInput">Meta Description (For SEO)</label>
+        <textarea name="seo_description" id="seoDescriptionInput" class="form-control" cols="30" rows="10">{{ $news->seo_description }}</textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="seoKeywordInput">Meta Keyword (For SEO)</label>
+        <input type="text" name="seo_keyword" class="form-control" id="seoKeywordInput"  value="{{ $news->seo_keyword }}" placeholder="Keyword">
     </div>
 
     <label for="uploadWrapper">Thumbnail</label>
@@ -46,60 +59,16 @@
 @endsection
 
 @push('script')
-<script src="{{ asset('bower_components/ckeditor/ckeditor.js') }}"></script>
+<script src="{{ asset('bower_components/ckeditor4/ckeditor.js') }}"></script>
 <script>
-    if ( CKEDITOR.env.ie && CKEDITOR.env.version < 9 )
-        CKEDITOR.tools.enableHtml5Elements( document );
-
-    // The trick to keep the editor in the sample quite small
-    // unless user specified own height.
-    CKEDITOR.config.height = 500;
+    CKEDITOR.replace('editor', {
+        filebrowserUploadUrl: "{{ route('news.image.upload', ['_token' => csrf_token() ]) }}",
+        filebrowserUploadMethod: 'form'
+    });
+    CKEDITOR.config.height = 800;
     CKEDITOR.config.width = 'auto';
+    CKEDITOR.config.skin = 'moono';
 
-    var initEditor = ( function() {
-        var wysiwygareaAvailable = isWysiwygareaAvailable(),
-            isBBCodeBuiltIn = !!CKEDITOR.plugins.get( 'bbcode' );
-
-        return function() {
-            var editorElement = CKEDITOR.document.getById( 'editor' );
-
-            // :(((
-            if ( isBBCodeBuiltIn ) {
-                editorElement.setHtml(
-                    'Hello world!\n\n' +
-                    'I\'m an instance of [url=https://ckeditor.com]CKEditor[/url].'
-                );
-            }
-
-            // Depending on the wysiwygarea plugin availability initialize classic or inline editor.
-            if ( wysiwygareaAvailable ) {
-                CKEDITOR.replace( 'editor', {
-                    filebrowserUploadUrl: "{{ route('news.image.upload', ['_token' => csrf_token() ]) }}",
-                    filebrowserUploadMethod: 'form'
-                } );
-            } else {
-                editorElement.setAttribute( 'contenteditable', 'true' );
-                CKEDITOR.inline( 'editor' );
-
-                // TODO we can consider displaying some info box that
-                // without wysiwygarea the classic editor may not work.
-            }
-        };
-
-        function isWysiwygareaAvailable() {
-            // If in development mode, then the wysiwygarea must be available.
-            // Split REV into two strings so builder does not replace it :D.
-            if ( CKEDITOR.revision == ( '%RE' + 'V%' ) ) {
-                return true;
-            }
-
-            return !!CKEDITOR.plugins.get( 'wysiwygarea' );
-        }
-    } )();
-
-    initEditor()
-
-    initUpload('#js--upload', '#uploadWrapper')
-
+initUpload('#js--upload', '#uploadWrapper')
 </script>
 @endpush

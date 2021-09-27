@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "admin-lte": "^3.1.0",
-    "ckeditor": "^4.16.2"
+    "ckeditor": "^4.16.2",
+    "ckeditor4": "https://github.com/ckeditor/ckeditor4.git#^4.16.2"
   }
 }
