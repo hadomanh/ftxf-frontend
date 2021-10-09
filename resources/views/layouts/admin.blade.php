@@ -136,7 +136,7 @@
 
           <li class="nav-item menu-open">
             <a href="#" class="nav-link">
-              <i class="fas fa-user-tie"></i>
+              <i class="fas fa-bezier-curve"></i>
               <p>
                 Ecosystem
                 <i class="right fas fa-angle-left"></i>
@@ -154,7 +154,7 @@
 
           <li class="nav-item menu-open">
             <a href="#" class="nav-link">
-              <i class="fas fa-user-tie"></i>
+              <i class="fas fa-address-book"></i>
               <p>
                 Contact
                 <i class="right fas fa-angle-left"></i>
@@ -172,7 +172,7 @@
 
           <li class="nav-item menu-open">
             <a href="#" class="nav-link">
-              <i class="fas fa-user-tie"></i>
+              <i class="fas fa-address-card"></i>
               <p>
                 About
                 <i class="right fas fa-angle-left"></i>
