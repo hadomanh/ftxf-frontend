@@ -8,7 +8,7 @@
             <div class="col-md-6 offset-md-3 col-sm-12 info">
                 <h3 class="pageHeading">ecosystem <span class="fw-light">platform</span></h3>
                 <div class="subHeading">
-                    FTX Fund was created with the aim of developing symbiotic ecosystems, based on solid technological foundations, all-encompassing transparency and unmatched cross-platform utility. All applications are built with the user in mind and are specifically geared towards the blockchain, crypto and fintech industries.
+                    {!! $description->detail !!}
                 </div>
                 <div class="ecoImgWrap">
                     <div class="inner">

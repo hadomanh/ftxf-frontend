@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\{
+    DescriptionController,
     HomeCarouselItemController,
     LandingPageController,
     NewsController,
@@ -42,6 +43,9 @@ Route::prefix('admin')->middleware(['auth'])->group(function () {
     Route::get('/partner/toggle/{partner}', [PartnerController::class, 'toggle'])->name('partner.toggle');
     Route::get('/home-carousel-item/toggle/{homeCarouselItem}', [HomeCarouselItemController::class, 'toggle'])->name('home-carousel-item.toggle');
     Route::post('/news/image', [NewsController::class, 'imageUpload'])->name('news.image.upload');
+
+    Route::get('/description/{name}', [DescriptionController::class, 'getDetail'])->name('description.detail');
+    Route::put('/description/{description}', [DescriptionController::class, 'updateDetail'])->name('description.update');
 
 });
 

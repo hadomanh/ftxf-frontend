@@ -125,6 +125,66 @@
                   <p>Manage</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{ route('description.detail', 'partner') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Description</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="fas fa-user-tie"></i>
+              <p>
+                Ecosystem
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('description.detail', 'ecosystem') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Description</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="fas fa-user-tie"></i>
+              <p>
+                Contact
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('description.detail', 'contact') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Description</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="fas fa-user-tie"></i>
+              <p>
+                About
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('description.detail', 'about') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Description</p>
+                </a>
+              </li>
             </ul>
           </li>
 
