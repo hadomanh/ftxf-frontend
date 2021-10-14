@@ -17,7 +17,7 @@
                     @foreach ($news as $item)
                         <div class="col-lg-6">
                             <div class="item">
-                                <div class="row g-0">
+                                <div class="row g-0 row-news">
                                     <div class="col-lg-4 col-md-3">
                                         <a href="{{ route('home.news.detail', [$item->slug]) }}"
                                         class="newsThumb">

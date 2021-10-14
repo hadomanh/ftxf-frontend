@@ -1356,7 +1356,7 @@ aside .social li a:hover {
 		z-index: -1;
 	}
 
-	#content .subPage .row {
+	#content .subPage .row-news {
 		min-height: 140px;
 		max-height: 140px;
 	}
