@@ -287,5 +287,6 @@
 </script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="{{ asset("js/globe.js") }}" type="module"></script>
 </body>
 </html>
