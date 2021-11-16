@@ -411,11 +411,13 @@
   gtag('config', 'UA-211657580-1');
 </script>
 
-<script>
-    /* Start Alexa Certify Javascript */
-    atrk_opts = { atrk_acct:"WUD1x1WyR620WR", domain:"ftxfund.com",dynamic: true};
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+    _atrk_opts = { atrk_acct:"FApxw1Fx9f207i", domain:"ftxfund.com",dynamic: true};
     (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
 </script>
+<noscript><img src="https://certify.alexametrics.com/atrk.gif?account=FApxw1Fx9f207i" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
 
 </body>
 </html>
